@@ -17,8 +17,8 @@ jobs:
       with:
         node-version: 18
 
-    - name: Install Bun (if used) or npm dependencies
-      run: npm install
+    - name: Install npm dependencies with legacy peer deps
+  run: npm install --legacy-peer-deps
 
     - name: Install Capacitor Android Platform
       run: |
